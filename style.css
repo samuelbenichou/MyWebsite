@@ -1,0 +1,30 @@
+#menu
+{
+	width: 100%;
+	height: 150px;
+	background: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+	/*background: deepskyblue;*/
+	font-size: 20px;
+	position: fixed;
+	color: chocolate;
+	/*height: 35px;*/
+    border: 1px solid powderblue;
+	padding: 10px;
+	
+}
+
+body 
+{
+  background-color: lightblue;
+  color: black;
+  background-color: white;
+  background-repeat: repeat;
+  margin: auto;
+  text-align: center;
+}
+
+#playlist{
+	font-size : 20px;
+	text-align : center;
+
+}
