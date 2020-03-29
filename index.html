@@ -60,11 +60,13 @@
 	 <br/>
 	 <img src="KM1.jpg" width="134" height="150" class="author" />
 	<blockquote>
-		<div class="w3-container">
+		<span style="font-size:120px;line-height:0.9em;opacity:0.4">❝</span>
+          <p class="w3-xlarge" style="margin-top:-40px"><i>"The thing about football - the important thing about football - is that it is not just about football."</i></p>
+		<!--<div class="w3-container">
 			<div class="w3-panel w3-light-grey">
           <span style="font-size:120px;line-height:0.9em;opacity:0.4">❝</span>
           <p class="w3-xlarge" style="margin-top:-40px"><i>"The thing about football - the important thing about football - is that it is not just about football."</i></p>
-          </div>
+          </div>-->
 	</blockquote>
 	 
 
@@ -179,7 +181,7 @@ Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can 
 <br/>
 <h1 id="h1">Contact Me</h1>
 <br/>
-<form action="mailto:benichos@post.bgu.ac.il" method="post" enctype="text/plain">
+<!--<form action="mailto:benichos@post.bgu.ac.il" method="post" enctype="text/plain">
     Name:<br>
     <input type="text" name="name"><br>
     <br/>
@@ -187,21 +189,52 @@ Web 3.0 is a semantic web which refers to the future. In Web 3.0, computers can 
     <input type="email" name="mail"><br>
     <br/>
     Message:<br>
-    <input type="text" name="comment" size="50"><br><br>
+    
+    <td><textarea name="comment" rows="5" cols="34"></textarea></td>
+    <br/>
+
     <input type="submit" class=button value="Send">
     <input type="reset"  class=button value="Reset">
+    
+          <td><input style="border:transparent; background-color: transparent" type="button" onclick="push('&#127773')" name=imog value=&#127773;>
+    
+
     <input type="button" style="border: transparent; background-color: transparent;" class="button1 bouncy" value="&#128522" onclick="push ('&#128522')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.07s;" class="button1 bouncy" value="&#128521" onclick="push ('&#128521')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.14s;" class="button1 bouncy" value="&#128514" onclick="push ('&#128514')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.21s;" class="button1 bouncy" value="&#128530" onclick="push ('&#128530')">
   <input type="button" style="border: transparent; background-color: transparent; animation-delay:0.28s;" class="button1 bouncy" value="&#128545" onclick="push ('&#128545')">
+
+
   <div id="buttons"></div>
 </div>
-</form>
-<br/>
+</form>-->
+
+     <form name=samuel action="mailto:benichos@post.bgu.ac.il" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    <br/>
+    E-mail:<br>
+    <input type="email" name="mail"><br>
+    <br/>
+    Message:<br>
+          <textarea name="comment" rows="5" cols="34"></textarea>
+        <br>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128522')" name=imog value=&#128522;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#127773')" name=imog value=&#127773;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128521')" name=imog value=&#128521;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128545')" name=imog value=&#128545;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128530')" name=imog value=&#128530;>
+          <input style="border:transparent; background-color: transparent" type="button" onclick="addEmoji('&#128514')" name=imog value=&#128514;>
+        <br/>
+          <input type="submit" class=button value="Send">
+    	<input type="reset"  class=button value="Reset">
+    	<br/>
+        
+      </form>
+    
 <br/>
 </section>
-
 
 <script type="text/javascript">
 $(function(){
@@ -216,6 +249,11 @@ $(function(){
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
  </script>
+ <script type="text/javascript">
+    function addEmoji(emoji) {
+      document.samuel.comment.value += emoji;
+    }
+  </script>
 </body>
 
 
